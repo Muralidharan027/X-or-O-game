@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="win-animation" id="winAnimation">
+            <div class="stars"></div>
+            <div class="spaceship1">🚀</div>
+            <div class="spaceship2">🛸</div>
+            <div class="explosion">💥</div>
+        </div>
+        <div class="winner-page" id="winnerPage">
+            <h2 id="winnerText"></h2>
+            <button class="reset-button" onclick="document.getElementById('resetButton').click()">Play Again</button>
+        </div>
+        <h1>Tic Tac Toe</h1><video class="background-video" autoplay loop muted playsinline>
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-rotating-black-hole-in-space-31493-large.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle">Make your own choice to win!!!</h2><video class="background-video" autoplay loop muted playsinline>
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-rotating-black-hole-in-space-31493-large.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle">Make your own choice to win!!!</h2>
+        <div class="status" id="status">Player X's Turn</div>
+        <div class="game-board">
+            <div class="cell" data-cell-index="0"></div>
+            <div class="cell" data-cell-index="1"></div>
+            <div class="cell" data-cell-index="2"></div>
+            <div class="cell" data-cell-index="3"></div>
+            <div class="cell" data-cell-index="4"></div>
+            <div class="cell" data-cell-index="5"></div>
+            <div class="cell" data-cell-index="6"></div>
+            <div class="cell" data-cell-index="7"></div>
+            <div class="cell" data-cell-index="8"></div>
+        </div>
+        <button class="reset-button" id="resetButton">Reset Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
